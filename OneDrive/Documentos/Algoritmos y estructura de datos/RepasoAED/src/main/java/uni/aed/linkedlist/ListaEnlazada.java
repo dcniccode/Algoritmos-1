@@ -20,7 +20,7 @@ public class ListaEnlazada {
             current=current.next;        
         current.next=newNodo;
     }
-    public void remove(int data){
+    public void delete(int data){
         if(head==null)
             return;
         //si el elemento a eliminar es el primer nodo
