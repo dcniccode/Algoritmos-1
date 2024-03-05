@@ -1,6 +1,7 @@
 package uni.aed.repasoaed;
 
 import uni.aed.circularlinkedlist.ListaCircularSimple;
+import uni.aed.doblelinkedlist.ListaDoblementeEnlazada;
 import uni.aed.linkedlist.ListaEnlazada;
 
 public class RepasoAED {
@@ -12,6 +13,7 @@ public class RepasoAED {
         list.addLast(12);
         list.delete(2);
         System.out.println(list.toString() + "\n***********************************\n");
+        
         ListaCircularSimple cirlist = new ListaCircularSimple();
         cirlist.add(3);
         cirlist.add(5);
@@ -21,6 +23,14 @@ public class RepasoAED {
         cirlist.add(123);
         cirlist.delete(123);
         cirlist.delete(5);
-        System.out.println(cirlist.toString());
+        System.out.println(cirlist.toString() + "\n***********************************\n");
+        ListaDoblementeEnlazada doublelist = new ListaDoblementeEnlazada();
+        doublelist.addFirst(10);
+        doublelist.addFirst(15);
+        doublelist.addLast(18);
+        doublelist.addLast(23);
+        doublelist.addFirst(42);
+        doublelist.delete(15);
+        System.out.println(doublelist.toString());
     }
 }
