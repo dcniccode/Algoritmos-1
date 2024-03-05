@@ -40,6 +40,7 @@ public class RepasoAED {
         douCirc.add(9);
         douCirc.add(6);
         douCirc.add(31);
+        douCirc.delete(6);
         System.out.println(douCirc.toString()+ "\n***********************************\n");
     }
 }
