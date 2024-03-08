@@ -71,4 +71,20 @@ public class BST {
         }
     }
     /**********************************************************************/
+    
+    public BST_Nodo search(int key){
+        return search(root, key);
+    }
+    
+    public BST_Nodo search(BST_Nodo p, int key){
+        while (p != null) {   
+            if(p.key == key)
+                return p;
+            else if(p.key < key)
+                p = p.right;
+            else
+                p = p.left;
+        }
+        return null;
+    }
 }
