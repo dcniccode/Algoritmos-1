@@ -87,4 +87,21 @@ public class BST {
         }
         return null;
     }
+    
+    public void breadthFirst(){
+        BST_Nodo p = root;
+        QueueTDA queue = new QueueTDA();
+        if(p != null){
+            queue.enqueue(p);
+            while (!queue.isEmpty()) {                
+                p = (BST_Nodo) queue.dequeue();
+                visit(p);
+                if(p.left != null)
+                    queue.enqueue(p.left);
+                if(p.right != null)
+                    queue.enqueue(p.right);
+            }
+        }
+    }
+    
 }
